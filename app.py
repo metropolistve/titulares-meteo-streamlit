@@ -5,7 +5,7 @@ import pandas as pd
 # Cargar el dataset
 @st.cache_data
 def cargar_datos():
-    df = pd.read_excel("export DATASET METEOSTAT 01012024_16052025.xlsx")
+    df = pd.read_excel("dataset_meteostat_madrid_castellano.xlsx")
     df['fecha'] = pd.to_datetime(df['fecha'])
     return df
 
